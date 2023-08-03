@@ -15,7 +15,7 @@
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
 {{!
-    @template theme_moove/loginform
+    @template theme_advent/loginform
 
     Moodle template for the login page.
 
@@ -149,7 +149,7 @@
             </div>
             {{#cansignup}}
                 <div class="login-signup text-center">
-                    {{#str}}donthaveanaccount, theme_moove{{/str}} <a href="{{signupurl}}">{{#str}}startsignup{{/str}}</a>
+                    {{#str}}donthaveanaccount, theme_advent{{/str}} <a href="{{signupurl}}">{{#str}}startsignup{{/str}}</a>
                 </div>
             {{/cansignup}}
         </form>
@@ -181,7 +181,7 @@
             <div class="column-content">
                 {{#hasidentityproviders}}
                     <div class="login-identityproviders">
-                        <p class="login-heading text-center">{{#str}}signinwith, theme_moove{{/str}}</p>
+                        <p class="login-heading text-center">{{#str}}signinwith, theme_advent{{/str}}</p>
                         {{#identityproviders}}
                             <a class="btn login-identityprovider-btn btn-block {{#isfacebook}}facebook{{/isfacebook}}" href="{{url}}">
                                 {{#iconurl}}

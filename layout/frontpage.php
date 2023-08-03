@@ -17,7 +17,7 @@
 /**
  * Frontpage layout for the moove theme.
  *
- * @package    theme_moove
+ * @package    theme_advent
  * @copyright  2022 Willian Mano {@link https://conecti.me}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -115,14 +115,14 @@ $templatecontext = [
     'addblockbutton' => $addblockbutton
 ];
 
-$themesettings = new \theme_moove\util\settings();
+$themesettings = new \theme_advent\util\settings();
 
 $templatecontext = array_merge($templatecontext, $themesettings->footer());
 
 if (isloggedin()) {
-    echo $OUTPUT->render_from_template('theme_moove/drawers', $templatecontext);
+    echo $OUTPUT->render_from_template('theme_advent/drawers', $templatecontext);
 } else {
     $templatecontext = array_merge($templatecontext, $themesettings->frontpage());
 
-    echo $OUTPUT->render_from_template('theme_moove/frontpage', $templatecontext);
+    echo $OUTPUT->render_from_template('theme_advent/frontpage', $templatecontext);
 }

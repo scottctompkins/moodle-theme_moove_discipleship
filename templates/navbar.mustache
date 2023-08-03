@@ -16,7 +16,7 @@
 }}
 {{!
 
-    @template theme_moove/navbar
+    @template theme_advent/navbar
 
     This template renders the top navbar.
 
@@ -57,7 +57,7 @@
 }}
 <nav class="navbar fixed-top navbar-light bg-white navbar-expand shadow" aria-label="{{#str}}sitemenubar, admin{{/str}}">
 
-    <button class="navbar-toggler aabtn d-block d-md-none px-1 my-1 border-0" data-toggler="drawers" data-action="toggle" data-target="theme_moove-drawers-primary">
+    <button class="navbar-toggler aabtn d-block d-md-none px-1 my-1 border-0" data-toggler="drawers" data-action="toggle" data-target="theme_advent-drawers-primary">
         <span class="navbar-toggler-icon"></span>
         <span class="sr-only">{{#str}}sidepanel, core{{/str}}</span>
     </button>
@@ -91,7 +91,7 @@
             <div class="divider border-left h-75 align-self-center mx-1"></div>
         {{/output.search_box}}
         {{#langmenu}}
-            {{> theme_moove/language_menu }}
+            {{> theme_advent/language_menu }}
             <div class="divider border-left h-75 align-self-center mx-1"></div>
         {{/langmenu}}
         {{{ output.navbar_plugin_output }}}
@@ -112,4 +112,4 @@
     </div>
 {{/secondarymoremenu}}
 
-{{> theme_moove/primary-drawer-mobile }}
+{{> theme_advent/primary-drawer-mobile }}

@@ -17,7 +17,7 @@
 /**
  * Theme functions.
  *
- * @package    theme_moove
+ * @package    theme_advent
  * @copyright 2017 Willian Mano - http://conecti.me
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -28,7 +28,7 @@
  * @param theme_config $theme The theme config object.
  * @return string
  */
-function theme_moove_get_main_scss_content($theme) {
+function theme_advent_get_main_scss_content($theme) {
     global $CFG;
 
     $scss = '';
@@ -40,7 +40,7 @@ function theme_moove_get_main_scss_content($theme) {
         $scss .= file_get_contents($CFG->dirroot . '/theme/boost/scss/preset/default.scss');
     } else if ($filename == 'plain.scss') {
         $scss .= file_get_contents($CFG->dirroot . '/theme/boost/scss/preset/plain.scss');
-    } else if ($filename && ($presetfile = $fs->get_file($context->id, 'theme_moove', 'preset', 0, '/', $filename))) {
+    } else if ($filename && ($presetfile = $fs->get_file($context->id, 'theme_advent', 'preset', 0, '/', $filename))) {
         $scss .= $presetfile->get_content();
     } else {
         // Safety fallback - maybe new installs etc.
@@ -64,7 +64,7 @@ function theme_moove_get_main_scss_content($theme) {
  * @param theme_config $theme The theme config object.
  * @return string
  */
-function theme_moove_get_extra_scss($theme) {
+function theme_advent_get_extra_scss($theme) {
     $content = '';
 
     // Sets the login background image.
@@ -89,7 +89,7 @@ function theme_moove_get_extra_scss($theme) {
  * @param theme_config $theme The theme config object.
  * @return string
  */
-function theme_moove_get_pre_scss($theme) {
+function theme_advent_get_pre_scss($theme) {
     $scss = '';
     $configurable = [
         // Config key => [variableName, ...].
@@ -131,7 +131,7 @@ function theme_moove_get_pre_scss($theme) {
  *
  * @return string compiled css
  */
-function theme_moove_get_precompiled_css() {
+function theme_advent_get_precompiled_css() {
     global $CFG;
 
     return file_get_contents($CFG->dirroot . '/theme/moove/style/moodle.css');
@@ -149,7 +149,7 @@ function theme_moove_get_precompiled_css() {
  * @param array $options
  * @return mixed
  */
-function theme_moove_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
+function theme_advent_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
     $theme = theme_config::load('moove');
 
     if ($context->contextlevel == CONTEXT_SYSTEM &&

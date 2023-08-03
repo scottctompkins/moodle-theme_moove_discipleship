@@ -17,7 +17,7 @@
 /**
  * A drawer based layout for the moove theme.
  *
- * @package    theme_moove
+ * @package    theme_advent
  * @copyright  2022 Willian Mano {@link https://conecti.me}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -82,13 +82,13 @@ $templatecontext = [
     'hasregionmainsettingsmenu' => !empty($regionmainsettingsmenu),
     'userpicture' => $userimg->get_url($PAGE),
     'userfullname' => fullname($user),
-    'headerbuttons' => \theme_moove\util\extras::get_mypublic_headerbuttons($context, $user),
-    'editprofileurl' => \theme_moove\util\extras::get_mypublic_editprofile_url($user, $courseid),
+    'headerbuttons' => \theme_advent\util\extras::get_mypublic_headerbuttons($context, $user),
+    'editprofileurl' => \theme_advent\util\extras::get_mypublic_editprofile_url($user, $courseid),
     'userdescription' => format_text($user->description, $user->descriptionformat, ['overflowdiv' => true])
 ];
 
-$themesettings = new \theme_moove\util\settings();
+$themesettings = new \theme_advent\util\settings();
 
 $templatecontext = array_merge($templatecontext, $themesettings->footer());
 
-echo $OUTPUT->render_from_template('theme_moove/mypublic', $templatecontext);
+echo $OUTPUT->render_from_template('theme_advent/mypublic', $templatecontext);

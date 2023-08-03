@@ -8,7 +8,7 @@ Moove is built on Boostrap4 and Mustache templates.
 Documentation
 =============
 
-You can see the theme documentation on: https://github.com/willianmano/moodle-theme_moove/wiki
+You can see the theme documentation on: https://github.com/willianmano/moodle-theme_advent/wiki
 
 Developed and maintained by
 ===========================
