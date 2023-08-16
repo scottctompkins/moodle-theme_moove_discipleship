@@ -20,7 +20,7 @@
  * @copyright  2022 Willian Mano - https://conecti.me
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-define(['jquery', 'core/modal_factory', 'theme_advent/accessibilitysettings_modal'],
+define(['jquery', 'core/modal_factory', 'theme_moove/accessibilitysettings_modal'],
     function($, ModalFactory, AccessibilitySettingsModal) {
         /**
          * Toogle region selectors.

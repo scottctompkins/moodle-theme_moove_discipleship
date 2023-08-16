@@ -17,19 +17,19 @@
 /**
  * Custom moove extras functions
  *
- * @package    theme_advent
+ * @package    theme_moove
  * @copyright  2022 Willian Mano - http://conecti.me
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace theme_advent\util;
+namespace theme_moove\util;
 
 use moodle_url;
 
 /**
  * Class to get some extras info in Moodle.
  *
- * @package    theme_advent
+ * @package    theme_moove
  * @copyright  2022 Willian Mano - http://conecti.me
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -64,7 +64,7 @@ class extras {
                     'class' => 'btn-header btn btn-sm btn-success'
                 ],
                 [
-                    'title' => get_string($contacttitle, 'theme_advent'),
+                    'title' => get_string($contacttitle, 'theme_moove'),
                     'url' => new \moodle_url('/message/index.php', [
                             'user1' => $USER->id,
                             'user2' => $user->id,

@@ -17,15 +17,15 @@
 /**
  * Language file.
  *
- * @package   theme_advent
+ * @package   theme_moove
  * @copyright 2017 Willian Mano - http://conecti.me
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Advent';
-$string['configtitle'] = 'Advent';
+$string['pluginname'] = 'Moove';
+$string['configtitle'] = 'Moove';
 $string['choosereadme'] = 'Moove is a modern highly-customisable theme. This theme is intended to be used directly, or as a parent theme when creating new themes utilising Bootstrap 4.';
 
 $string['currentinparentheses'] = '(current)';

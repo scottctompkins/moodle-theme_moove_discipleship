@@ -17,7 +17,7 @@
 /**
  * A login page layout for the moove theme.
  *
- * @package    theme_advent
+ * @package    theme_moove
  * @copyright  2022 Willian Mano {@link https://conecti.me}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -32,4 +32,4 @@ $templatecontext = [
     'bodyattributes' => $bodyattributes
 ];
 
-echo $OUTPUT->render_from_template('theme_advent/login', $templatecontext);
+echo $OUTPUT->render_from_template('theme_moove/login', $templatecontext);

@@ -17,23 +17,23 @@
 /**
  * Overriden theme boost core renderer.
  *
- * @package    theme_advent
+ * @package    theme_moove
  * @copyright  2022 Willian Mano {@link https://conecti.me}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace theme_advent\output;
+namespace theme_moove\output;
 
 use theme_config;
 use core\context\course as context_course;
 use moodle_url;
 use html_writer;
-use theme_advent\output\core_course\activity_navigation;
+use theme_moove\output\core_course\activity_navigation;
 
 /**
  * Renderers to align Moodle's HTML with that expected by Bootstrap
  *
- * @package    theme_advent
+ * @package    theme_moove
  * @copyright  2022 Willian Mano {@link https://conecti.me}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

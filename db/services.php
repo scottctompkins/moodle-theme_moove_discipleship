@@ -17,7 +17,7 @@
 /**
  * Theme moove functions and service definitions.
  *
- * @package    theme_advent
+ * @package    theme_moove
  * @copyright  2022 Willian Mano {@link https://conecti.me}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -25,30 +25,30 @@
 defined('MOODLE_INTERNAL') || die();
 
 $functions = array(
-    'theme_advent_fontsize' => array(
-        'classname' => 'theme_advent\api\accessibility',
-        'classpath' => 'theme_advent/classes/api/accessibility.php',
+    'theme_moove_fontsize' => array(
+        'classname' => 'theme_moove\api\accessibility',
+        'classpath' => 'theme_moove/classes/api/accessibility.php',
         'methodname' => 'fontsize',
         'description' => 'Increase or decrease the site font size.',
         'type' => 'write',
         'ajax' => true
     ),
-    'theme_advent_sitecolor' => array(
-        'classname' => 'theme_advent\api\accessibility',
+    'theme_moove_sitecolor' => array(
+        'classname' => 'theme_moove\api\accessibility',
         'methodname' => 'sitecolor',
         'description' => 'Changes the site color aspect.',
         'type' => 'write',
         'ajax' => true
     ),
-    'theme_advent_savethemesettings' => array(
-        'classname' => 'theme_advent\api\accessibility',
+    'theme_moove_savethemesettings' => array(
+        'classname' => 'theme_moove\api\accessibility',
         'methodname' => 'savethemesettings',
         'description' => 'Store the user theme settings.',
         'type' => 'write',
         'ajax' => true
     ),
-    'theme_advent_getthemesettings' => array(
-        'classname' => 'theme_advent\api\accessibility',
+    'theme_moove_getthemesettings' => array(
+        'classname' => 'theme_moove\api\accessibility',
         'methodname' => 'getthemesettings',
         'description' => 'Get the user theme settings.',
         'type' => 'read',

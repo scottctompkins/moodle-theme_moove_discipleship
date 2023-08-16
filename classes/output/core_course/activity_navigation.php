@@ -17,11 +17,11 @@
 /**
  * File containing the class activity navigation renderable.
  *
- * @package    theme_advent
+ * @package    theme_moove
  * @copyright  2022 Willian Mano {@link https://conecti.me}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-namespace theme_advent\output\core_course;
+namespace theme_moove\output\core_course;
 
 use renderable;
 use templatable;
@@ -30,7 +30,7 @@ use url_select;
 /**
  * The class activity navigation renderable.
  *
- * @package    theme_advent
+ * @package    theme_moove
  * @copyright  2022 Willian Mano {@link https://conecti.me}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

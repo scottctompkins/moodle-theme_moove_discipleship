@@ -17,18 +17,18 @@
 /**
  * Module renderer
  *
- * @package    theme_advent
+ * @package    theme_moove
  * @copyright  2022 Willian Mano {@link https://conecti.me}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-namespace theme_advent\output;
+namespace theme_moove\output;
 
 use plugin_renderer_base;
 
 /**
  * Theme renderer
  *
- * @package    theme_advent
+ * @package    theme_moove
  * @copyright  2022 Willian Mano {@link https://conecti.me}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

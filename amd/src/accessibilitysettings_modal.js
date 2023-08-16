@@ -43,7 +43,7 @@ define(['jquery', 'core/notification', 'core/custom_interaction_events', 'core/m
             Modal.call(this, root);
 
             var request = Ajax.call([{
-                methodname: 'theme_advent_getthemesettings',
+                methodname: 'theme_moove_getthemesettings',
                 args: {}
             }]);
 
@@ -56,7 +56,7 @@ define(['jquery', 'core/notification', 'core/custom_interaction_events', 'core/m
             });
         };
 
-        AccessibilityModal.TYPE = 'theme_advent-themesettings_modal';
+        AccessibilityModal.TYPE = 'theme_moove-themesettings_modal';
         AccessibilityModal.prototype = Object.create(Modal.prototype);
         AccessibilityModal.prototype.constructor = AccessibilityModal;
 
@@ -71,7 +71,7 @@ define(['jquery', 'core/notification', 'core/custom_interaction_events', 'core/m
 
             this.getModal().on(CustomEvents.events.activate, SELECTORS.SAVE_BUTTON, function() {
                 var request = Ajax.call([{
-                    methodname: 'theme_advent_savethemesettings',
+                    methodname: 'theme_moove_savethemesettings',
                     args: {
                         formdata: this.getFormData()
                     }
@@ -126,7 +126,7 @@ define(['jquery', 'core/notification', 'core/custom_interaction_events', 'core/m
         // Automatically register with the modal registry the first time this module is imported so that you can create modals
         // of this type using the modal factory.
         if (!registered) {
-            ModalRegistry.register(AccessibilityModal.TYPE, AccessibilityModal, 'theme_advent/accessibilitysettings_modal');
+            ModalRegistry.register(AccessibilityModal.TYPE, AccessibilityModal, 'theme_moove/accessibilitysettings_modal');
             registered = true;
         }
 

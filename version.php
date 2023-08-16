@@ -17,7 +17,7 @@
 /**
  * Moove.
  *
- * @package    theme_advent
+ * @package    theme_moove
  * @copyright  2022 Willian Mano - https://conecti.me
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 // This is the component name of the plugin - it always starts with 'theme_'
 // for themes and should be the same as the name of the folder.
-$plugin->component = 'theme_advent';
+$plugin->component = 'theme_moove';
 
 // This is the version of the plugin.
 $plugin->version = 2023051000;

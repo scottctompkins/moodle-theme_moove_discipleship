@@ -15,7 +15,7 @@
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
 {{!
-    @template theme_advent/drawers
+    @template theme_moove/drawers
 
     Boost drawer template.
 
@@ -49,17 +49,17 @@
         "addblockbutton": ""
     }
 }}
-{{> theme_advent/head }}
+{{> theme_moove/head }}
 
 <body {{{ bodyattributes }}}>
-{{> theme_advent/accessibilitybar }}
+{{> theme_moove/accessibilitybar }}
 
 {{> core/local/toast/wrapper}}
 <div id="page-wrapper" class="d-print-block">
 
     {{{ output.standard_top_of_body_html }}}
 
-    {{> theme_advent/navbar }}
+    {{> theme_moove/navbar }}
 
     {{#courseindex}}
         {{< theme_boost/drawer }}
@@ -165,7 +165,7 @@
             </div>
         </div>
 
-        {{> theme_advent/footer }}
+        {{> theme_moove/footer }}
     </div>
     {{{ output.standard_after_main_region_html }}}
 </div>

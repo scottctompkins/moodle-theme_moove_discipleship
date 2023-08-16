@@ -17,23 +17,23 @@
 /**
  * Course renderer.
  *
- * @package    theme_advent
+ * @package    theme_moove
  * @copyright  2022 Willian Mano {@link https://conecti.me}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace theme_advent\output\core;
+namespace theme_moove\output\core;
 
 use html_writer;
 use coursecat_helper;
 use stdClass;
 use core_course_list_element;
-use theme_advent\util\course;
+use theme_moove\util\course;
 
 /**
  * Renderers to align Moove's course elements to what is expect
  *
- * @package    theme_advent
+ * @package    theme_moove
  * @copyright  2022 Willian Mano {@link https://conecti.me}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -218,7 +218,7 @@ class course_renderer extends \core_course_renderer {
             'courseurl' => $this->get_course_url($course->id)
         ];
 
-        return $this->render_from_template('theme_advent/moove_coursecard', $data);
+        return $this->render_from_template('theme_moove/moove_coursecard', $data);
     }
 
     /**

@@ -17,12 +17,12 @@
 /**
  * Privacy provider
  *
- * @package    theme_advent
+ * @package    theme_moove
  * @copyright  2022 Willian Mano {@link https://conecti.me}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace theme_advent\privacy;
+namespace theme_moove\privacy;
 
 use \core_privacy\local\metadata\collection;
 use \core_privacy\local\metadata\provider as baseprovider;
@@ -32,7 +32,7 @@ use \core_privacy\local\request\writer;
 /**
  * Privacy provider class
  *
- * @package    theme_advent
+ * @package    theme_moove
  * @copyright  2022 Willian Mano {@link https://conecti.me}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -75,29 +75,29 @@ class provider implements
         $toolbar = get_user_preferences(self::TOOLBAR, null, $userid);
         if (isset($toolbar)) {
             writer::export_user_preference(
-                'theme_advent',
+                'theme_moove',
                 self::TOOLBAR,
                 $toolbar,
-                get_string('privacy:thememoovesettings_enableaccessibilitytoolbar', 'theme_advent', $toolbar)
+                get_string('privacy:thememoovesettings_enableaccessibilitytoolbar', 'theme_moove', $toolbar)
             );
 
             $fontsize = get_user_preferences(self::FONTSIZE, null, $userid);
             if (isset($fontsize)) {
                 writer::export_user_preference(
-                    'theme_advent',
+                    'theme_moove',
                     self::FONTSIZE,
                     $fontsize,
-                    get_string('privacy:accessibilitystyles_fontsizeclass', 'theme_advent', $fontsize)
+                    get_string('privacy:accessibilitystyles_fontsizeclass', 'theme_moove', $fontsize)
                 );
             }
 
             $sitecolor = get_user_preferences(self::SITECOLOR, null, $userid);
             if (isset($sitecolor)) {
                 writer::export_user_preference(
-                    'theme_advent',
+                    'theme_moove',
                     self::SITECOLOR,
                     $sitecolor,
-                    get_string('privacy:accessibilitystyles_sitecolorclass', 'theme_advent', $sitecolor)
+                    get_string('privacy:accessibilitystyles_sitecolorclass', 'theme_moove', $sitecolor)
                 );
             }
         }
@@ -105,10 +105,10 @@ class provider implements
         $fonttype = get_user_preferences(self::FONTTYPE, null, $userid);
         if (isset($fonttype)) {
             writer::export_user_preference(
-                'theme_advent',
+                'theme_moove',
                 self::FONTTYPE,
                 $fonttype,
-                get_string('privacy:thememoovesettings_fonttype', 'theme_advent', $fonttype)
+                get_string('privacy:thememoovesettings_fonttype', 'theme_moove', $fonttype)
             );
         }
     }

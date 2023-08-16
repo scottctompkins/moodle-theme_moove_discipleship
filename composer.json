@@ -1,11 +1,11 @@
 {
-    "name": "scottctompkins/moodle-theme_advent",
+    "name": "willianmano/moodle-theme_moove",
     "type": "moodle-theme",
     "require": {
         "composer/installers": "~1.0"
     },
     "extra": {
-        "installer-name": "advent"
+        "installer-name": "moove"
     }
 }
 
