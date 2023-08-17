@@ -65,7 +65,7 @@
 body.has-secondarynavigation {
     #page,
     #page.drawers {
-        margin-top: 130px;
+        margin-top: 10px;
     }
 
     .drawer-toggles .drawer-toggler {
@@ -88,8 +88,8 @@ body.has-secondarynavigation {
     body.has-secondarynavigation {
         .drawer-left,
         .drawer-right {
-            top: calc(130px + 1px);
-            height: calc(100vh - 130px);
+            top: calc(10px + 1px);
+            height: calc(100vh - 10px);
         }
     }
 }

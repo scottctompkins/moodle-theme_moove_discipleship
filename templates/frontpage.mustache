@@ -53,167 +53,173 @@
 
 <body {{{ bodyattributes }}}>
 {{> core/local/toast/wrapper}}
-<div id="page-wrapper" class="d-print-block">
 
-    {{{ output.standard_top_of_body_html }}}
+<div class="outer-wrapper">
+    {{> theme_moove/adventist-stripe }}
 
-    {{> theme_moove/navbar }}
 
-    <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers drag-container bg-white">
-        {{#slidercount}}
-            <div id="mooveslideshow" class="container-fluid">
-                <div id="carousel-indicators" class="carousel slide carousel-fade" data-ride="carousel">
-                    {{^slidersingleslide}}
-                    <ol class="carousel-indicators">
-                        {{#slides}}
-                            <li data-target="#carousel-indicators" data-slide-to="{{{ key }}}" {{#active}}class="active"{{/active}}></li>
-                        {{/slides}}
-                    </ol>
-                    {{/slidersingleslide}}
-                    <div class="carousel-inner">
-                        {{#slides}}
-                            <div class="carousel-item {{#active}}active{{/active}}">
-                                <img src="{{image}}" alt="{{slidertitle}}" class="w-100">
-                                {{#hascaption}}
-                                    <div class="carousel-caption d-none d-md-block">
-                                        {{#title}}
-                                            <h5 class="title">{{.}}</h5>
-                                        {{/title}}
-                                        {{#caption}}
-                                            <div class="caption">
-                                                {{{.}}}
+        <div id="page-wrapper" class="d-print-block">
+
+            {{{ output.standard_top_of_body_html }}}
+
+            {{> theme_moove/navbar }}
+
+            <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers drag-container bg-white">
+                {{#slidercount}}
+                    <div id="mooveslideshow" class="container-fluid">
+                        <div id="carousel-indicators" class="carousel slide carousel-fade" data-ride="carousel">
+                            {{^slidersingleslide}}
+                            <ol class="carousel-indicators">
+                                {{#slides}}
+                                    <li data-target="#carousel-indicators" data-slide-to="{{{ key }}}" {{#active}}class="active"{{/active}}></li>
+                                {{/slides}}
+                            </ol>
+                            {{/slidersingleslide}}
+                            <div class="carousel-inner">
+                                {{#slides}}
+                                    <div class="carousel-item {{#active}}active{{/active}}">
+                                        <img src="{{image}}" alt="{{slidertitle}}" class="w-100">
+                                        {{#hascaption}}
+                                            <div class="carousel-caption d-none d-md-block">
+                                                {{#title}}
+                                                    <h5 class="title">{{.}}</h5>
+                                                {{/title}}
+                                                {{#caption}}
+                                                    <div class="caption">
+                                                        {{{.}}}
+                                                    </div>
+                                                {{/caption}}
                                             </div>
-                                        {{/caption}}
+                                        {{/hascaption}}
                                     </div>
-                                {{/hascaption}}
+                                {{/slides}}
                             </div>
-                        {{/slides}}
-                    </div>
-                    {{^slidersingleslide}}
-                    <a class="carousel-control-prev" href="#carousel-indicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">{{#str}}previous{{/str}}</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel-indicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">{{#str}}next{{/str}}</span>
-                    </a>
-                    {{/slidersingleslide}}
-                </div>
-            </div>
-        {{/slidercount}}
-
-        {{#displaymarketingbox}}
-            <section id="feature">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 my-3">
-                            <h3 class="h1 mt-3 mb-3">{{{marketingheading}}}</h3>
-                            <div class="marketing-content">{{{marketingcontent}}}</div>
+                            {{^slidersingleslide}}
+                            <a class="carousel-control-prev" href="#carousel-indicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">{{#str}}previous{{/str}}</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-indicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">{{#str}}next{{/str}}</span>
+                            </a>
+                            {{/slidersingleslide}}
                         </div>
-                        <div class="col-lg-8 ps-xl-8">
+                    </div>
+                {{/slidercount}}
+
+                {{#displaymarketingbox}}
+                    <section id="feature">
+                        <div class="container">
                             <div class="row">
-                                {{#marketingboxes}}
-                                    <div class="col-sm-6 mt-4">
-                                        <div class="card card-body shadow">
-                                            <div class="d-flex">
-                                                <div class="icon-lg text-white rounded-circle">
-                                                    <img src="{{{icon}}}">
+                                <div class="col-lg-4 my-3">
+                                    <h3 class="h1 mt-3 mb-3">{{{marketingheading}}}</h3>
+                                    <div class="marketing-content">{{{marketingcontent}}}</div>
+                                </div>
+                                <div class="col-lg-8 ps-xl-8">
+                                    <div class="row">
+                                        {{#marketingboxes}}
+                                            <div class="col-sm-6 mt-4">
+                                                <div class="card card-body shadow">
+                                                    <div class="d-flex">
+                                                        <div class="icon-lg text-white rounded-circle">
+                                                            <img src="{{{icon}}}">
+                                                        </div>
+                                                        <div class="col ps-3">
+                                                            <h5>{{{heading}}}</h5>
+                                                            <div class="box-content">{{{content}}}</div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="col ps-3">
-                                                    <h5>{{{heading}}}</h5>
-                                                    <div class="box-content">{{{content}}}</div>
-                                                </div>
+                                            </div>
+                                        {{/marketingboxes}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                {{/displaymarketingbox}}
+
+                {{#numbersfrontpage}}
+                    <section id="numbers">
+                        <div class="moove-container-fluid">
+                            <div class="row customer-area-l1 justify-content-center align-items-center ">
+                                <div class="col-xl-5 col-lg-5 col-md-10">
+                                    <div class="sectionheading">
+                                        {{{numberscontent}}}
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-7 col-md-10 offset-xl-1">
+                                    <div class="row user-rating-box-area">
+                                        <div class="col-sm-6 col-xs-8">
+                                            <div class="h-100 rate-box bg-primary">
+                                                <h3>
+                                                    {{{numbersusers}}}
+                                                </h3>
+                                                <p>{{#str}}numbersusers, theme_moove{{/str}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-xs-8">
+                                            <div class="h-100 rate-box rate-box-2 bg-cloudburst">
+                                                <h3>
+                                                    {{{numberscourses}}}
+                                                </h3>
+                                                <p>{{#str}}numberscourses, theme_moove{{/str}}</p>
                                             </div>
                                         </div>
                                     </div>
-                                {{/marketingboxes}}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        {{/displaymarketingbox}}
-
-        {{#numbersfrontpage}}
-            <section id="numbers">
-                <div class="moove-container-fluid">
-                    <div class="row customer-area-l1 justify-content-center align-items-center ">
-                        <div class="col-xl-5 col-lg-5 col-md-10">
-                            <div class="sectionheading">
-                                {{{numberscontent}}}
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-7 col-md-10 offset-xl-1">
-                            <div class="row user-rating-box-area">
-                                <div class="col-sm-6 col-xs-8">
-                                    <div class="h-100 rate-box bg-primary">
-                                        <h3>
-                                            {{{numbersusers}}}
-                                        </h3>
-                                        <p>{{#str}}numbersusers, theme_moove{{/str}}</p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-xs-8">
-                                    <div class="h-100 rate-box rate-box-2 bg-cloudburst">
-                                        <h3>
-                                            {{{numberscourses}}}
-                                        </h3>
-                                        <p>{{#str}}numberscourses, theme_moove{{/str}}</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-        {{/numbersfrontpage}}
-
-        <div id="topofscroll">
-            <div id="page-content" class="d-print-block main-inner">
-                <div id="region-main-box">
-                    <section id="region-main" aria-label="{{#str}}content{{/str}}">
-                        {{{ output.course_content_header }}}
-                        {{{ output.main_content }}}
-                        {{{ output.course_content_footer }}}
                     </section>
+                {{/numbersfrontpage}}
+
+                <div id="topofscroll">
+                    <div id="page-content" class="d-print-block main-inner">
+                        <div id="region-main-box">
+                            <section id="region-main" aria-label="{{#str}}content{{/str}}">
+                                {{{ output.course_content_header }}}
+                                {{{ output.main_content }}}
+                                {{{ output.course_content_footer }}}
+                            </section>
+                        </div>
+                    </div>
                 </div>
+
+                {{#faqenabled}}
+                    <section id="faq" class="scale-up scale-up-show">
+                        <div class="moove-container-fluid">
+                            <h2>{{#str}}faq, theme_moove{{/str}}</h2>
+
+                            <div class="accordion" id="accordionFaq">
+                                {{#faq}}
+                                    <div class="card shadow">
+                                        <div class="card-header" id="heading-{{{id}}}">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse-{{{id}}}" aria-expanded="false" aria-controls="collapse-{{{id}}}">
+                                                    {{{question}}}
+                                                </button>
+                                            </h2>
+                                        </div>
+
+                                        <div id="collapse-{{{id}}}" class="collapse" aria-labelledby="heading-{{{id}}}" data-parent="#accordionFaq">
+                                            <div class="card-body">
+                                                {{{answer}}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                {{/faq}}
+                            </div>
+                        </div>
+                    </section>
+                {{/faqenabled}}
+
+                {{> theme_moove/footer }}
             </div>
+            {{{ output.standard_after_main_region_html }}}
         </div>
 
-        {{#faqenabled}}
-            <section id="faq" class="scale-up scale-up-show">
-                <div class="moove-container-fluid">
-                    <h2>{{#str}}faq, theme_moove{{/str}}</h2>
-
-                    <div class="accordion" id="accordionFaq">
-                        {{#faq}}
-                            <div class="card shadow">
-                                <div class="card-header" id="heading-{{{id}}}">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse-{{{id}}}" aria-expanded="false" aria-controls="collapse-{{{id}}}">
-                                            {{{question}}}
-                                        </button>
-                                    </h2>
-                                </div>
-
-                                <div id="collapse-{{{id}}}" class="collapse" aria-labelledby="heading-{{{id}}}" data-parent="#accordionFaq">
-                                    <div class="card-body">
-                                        {{{answer}}}
-                                    </div>
-                                </div>
-                            </div>
-                        {{/faq}}
-                    </div>
-                </div>
-            </section>
-        {{/faqenabled}}
-
-        {{> theme_moove/footer }}
-    </div>
-    {{{ output.standard_after_main_region_html }}}
 </div>
-
 </body>
 </html>
 {{#js}}
