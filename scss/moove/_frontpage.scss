@@ -140,7 +140,11 @@
     }
 
     #feature {
-        background-color: #f1f6fd;
+        // background-color: #f1f6fd;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('/theme/moove/pix/frontpage-feature-bg.jpg');
+        background-size: cover;     
+        background-position: top;   
+        // background-image: url('/theme/moove/pix/frontpage-feature-bg.jpg'); background-size: cover;
         padding: 4rem 0;
         margin-left: -15px;
         margin-right: -15px;
