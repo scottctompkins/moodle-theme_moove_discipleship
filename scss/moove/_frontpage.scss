@@ -3,7 +3,25 @@
     .dashboard-card {
         position: relative;
         width: calc(33.33% - 2rem) !important;
+        max-width: calc(33.33% - 2rem) !important;
         margin: 1rem;
+
+        &.dimmed .card-img::after {
+            content: '';
+            position: absolute;
+            background-color: rgba(0,0,0,0.5);
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            border-top-left-radius: .5rem;;
+            border-top-right-radius: .5rem;;
+        }
+
+        .card-img.dashboard-card-img {
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
 
         .dashboard-card-footer {
             border-radius: .5rem;
@@ -270,6 +288,7 @@
     .pagelayout-frontpage .dashboard-card,
     .pagelayout-coursecategory .dashboard-card {
         width: 100% !important;
+        max-width: 100% !important;
         margin: 1rem 0;
         -webkit-box-shadow: none;
         box-shadow: none;
